@@ -14,7 +14,7 @@
         android:theme="@style/Theme.DominandoAndroid">
         <!-- é possível colocar aqui um android label para identificar o texto específico da activity -->
         <activity android:name=".MainActivity"
-            android:label="@string/helloWorld">
+            android:label="@string/hello_world">
             <intent-filter>
                 <!-- ponto de entrda de aplicação -->
                 <action android:name="android.intent.action.MAIN" />

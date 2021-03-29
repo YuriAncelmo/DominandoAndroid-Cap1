@@ -1,17 +1,28 @@
-plugins {
+//Responsável por incluir o plugin de android para permitir compilação mesmo para o gradle
+//Injeta a dependência do kotlin para entender a linguagem e traduzir para maquina
+/*plugins {
     id 'com.android.application'
     id 'kotlin-android'
-}
+}*/
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
+    //Level de aplicação para compilar
     compileSdkVersion 28
+    //Qual é a versão da ferramenta de compilação
     buildToolsVersion "31.0.0 rc2"
 
     defaultConfig {
+        //Qual é o nome da minha aplicação (vai estar disponível na playstore)
         applicationId "com.yuri.dominandoandroid"
+        //Qual o SdkMinimo para rodar o projeto
         minSdkVersion 21
+        //Qual é o Sdk que foi testado/versão máxima compatível
         targetSdkVersion 28
+        //Versionamento do código
         versionCode 1
+        //Nome da versão
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -31,7 +42,7 @@ android {
         jvmTarget = '1.8'
     }
 }
-
+//Aqui é onde colocamos os pacotes externos que precisamos utilizar
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'

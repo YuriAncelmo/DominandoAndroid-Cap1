@@ -1,5 +1,5 @@
 <resources>
     <!-- pode ser chamado no código via getString(R.string.app_name) em xml @string/app_name -->
     <string name="app_name">DominandoAndroid</string>
-    <string name="hello_world">Hello World!</string>
+    <string name="hello_world">Olá Mundo!</string>
 </resources>
