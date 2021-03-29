@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuri.dominandoandroid">
+    <!-- Configurações da aplicação -->
+    <!-- Supportsrtl define se a leitura do meu app pode ser feita da direita para esquerda, útil em caso de japonês, arabe -->
+    <!-- icone do aplicativo, que está lá na pasta res mipmap -->
+    <!-- roundIcon é a propriedade que identifica que o icone é arrendondado, apenas em API level > 7.1 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.DominandoAndroid">
+        <!-- é possível colocar aqui um android label para identificar o texto específico da activity -->
+        <activity android:name=".MainActivity"
+            android:label="@string/helloWorld">
+            <intent-filter>
+                <!-- ponto de entrda de aplicação -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- vai aparecer no aparelho para o user clicar e abrir -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
